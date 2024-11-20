@@ -15,11 +15,9 @@ class MyAdapter(private val userList: ArrayList<User>): RecyclerView.Adapter<MyA
     interface onItemClickListener{
         fun onItemClick(position: Int)
     }
-
     fun setOnClickListener(clickListener: onItemClickListener){
         mListener= clickListener
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
             R.layout.item,
@@ -27,7 +25,6 @@ class MyAdapter(private val userList: ArrayList<User>): RecyclerView.Adapter<MyA
         )
         return MyViewHolder(itemView, mListener)
     }
-
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentitem = userList[position]
 
@@ -48,7 +45,6 @@ class MyAdapter(private val userList: ArrayList<User>): RecyclerView.Adapter<MyA
         val phoneTxt: TextView= itemView.findViewById(R.id.tvphone)
         val totalFee: TextView= itemView.findViewById(R.id.tvfees)
         val pendingFee: TextView= itemView.findViewById(R.id.tvpend)
-
         init{
             itemView.setOnClickListener {
                 clickListener.onItemClick(adapterPosition)

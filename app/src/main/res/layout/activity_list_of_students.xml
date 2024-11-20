@@ -117,16 +117,6 @@
                 android:textColor="#000080"
                 android:layout_marginTop="30dp"
                 android:text="" />
-
-            <Button
-                android:id="@+id/emailbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:gravity="center_horizontal"
-                android:backgroundTint="#FFD700"
-                android:text="Send Email" />
         </LinearLayout>
 
         <LinearLayout
@@ -155,16 +145,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="" />
-
-            <Button
-                android:id="@+id/callbtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:gravity="center_horizontal"
-                android:backgroundTint="#FFD700"
-                android:text="Call" />
         </LinearLayout>
 
         <LinearLayout
